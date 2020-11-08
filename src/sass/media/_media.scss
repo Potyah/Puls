@@ -1,0 +1,136 @@
+@media(max-width: 1200px) {
+    .container {
+        width: 750px;
+    }
+
+    .advantages {
+        &__wrapper {
+            padding-top: 65px;
+        }
+
+        &__items {
+            width: 200px;
+        }
+    }
+}
+
+@media(max-width:991px) {
+    .container {
+        width: 650px;
+    }
+
+    .header {
+        &__logo {
+            width: 200px;
+        }
+
+        &__official {
+            display: none;
+        }
+    }
+
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+
+        &__subheader {
+            padding-top: 17px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+
+    .header {
+        padding: 0 25px;
+        justify-content: space-around;
+        &__wrapper {
+            padding: 0 15px;
+        }
+
+        &__logo {
+            width: 200px;
+        }
+
+        &__official {
+            display: none;
+        }
+    }
+
+    .advantages {
+        padding: 30px 0 50px 0;
+
+        &__wrapper {
+            padding-top: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__items {
+            padding-top: 30px;
+            width: 450px;
+        }
+    }
+}
+
+@media(max-width: 566px) {
+    .header {
+        padding: 0 15px;
+        &__logo {
+            width: 150px;
+        }
+        &__phone {
+            font-size: 15px;
+        }
+        .button {
+            width: 100px;
+            height: 25px;
+            font-size: 8px;
+            font-weight: bold;
+        }
+    }
+
+    .promo {
+        padding-top: 25px;
+        min-height: 560px;
+        &__wrapper {
+            padding-top: 25px;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__header {
+            font-size: 30px;
+        }
+
+        &__subheader {
+            padding-top: 17px;
+            font-size: 18px;
+        }
+
+        &__icons {
+            display: none;
+        }
+    }
+
+    .advantages {
+        padding: 30px 0 50px 0;
+
+        &__wrapper {
+            padding-top: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__items {
+            padding-top: 30px;
+            width: 300px;
+        }
+    }
+
+}
