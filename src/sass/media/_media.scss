@@ -3,6 +3,10 @@
         width: 750px;
     }
 
+    .promo {
+        background-image: 100%;
+    }
+
     .advantages {
         &__wrapper {
             padding-top: 65px;
@@ -10,6 +14,24 @@
 
         &__items {
             width: 200px;
+        }
+    }
+
+    .title {
+        &_left {
+            font-size: 33px;
+        }
+    }
+
+    .catalog {
+        &__content {
+            justify-content: space-evenly;
+        }
+
+        &-item {
+            width: 299px;
+            justify-content: space-between;
+            margin-right: 0;
         }
     }
 }
@@ -39,16 +61,70 @@
             font-size: 20px;
         }
     }
+
+    .consultation {
+        padding: 50px 10px;
+        min-height: 500px;
+
+        &__descr {
+            padding-top: 40px;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .title {
+        &_left {
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+
+    .feed-form {
+        padding-top: 60px;
+        margin: 0 auto;
+    }
+
+    .carousel {
+        &__inner {
+            height: 400px;
+            width: 100%;
+
+            li {
+                list-style-type: none;
+            }
+
+            img {
+                max-width: 70%;
+                height: 296px;
+            }
+        }
+    }
+
+    .catalog {
+        h2 {
+            font-size: 24px;
+        }
+
+        &__tab {
+            width: 150px;
+            height: 40px;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 40px;
+        }
+    }
 }
 
 @media(max-width: 767px) {
     .container {
-        width: 100%;
+        width: 500px;
     }
 
     .header {
         padding: 0 25px;
         justify-content: space-around;
+
         &__wrapper {
             padding: 0 15px;
         }
@@ -76,17 +152,52 @@
             width: 450px;
         }
     }
+
+    .consultation {
+        &__descr {
+            font-size: 18px;
+        }
+    }
+
+    .title {
+        &_left {
+            font-size: 22px;
+        }
+    }
+
+    .feed {
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                padding-right: 0;
+            }
+            &__text {
+                padding: 20px 15px 0 15px;
+                text-align: center;
+            }
+        }
+    }
 }
 
 @media(max-width: 566px) {
+    .container {
+        width: 100%;
+    }
+
     .header {
         padding: 0 15px;
+
         &__logo {
             width: 150px;
         }
+
         &__phone {
-            font-size: 15px;
+            font-size: 13px;
         }
+
         .button {
             width: 100px;
             height: 25px;
@@ -96,10 +207,10 @@
     }
 
     .promo {
-        padding-top: 25px;
+        padding: 25px 10px 0 10px;
         min-height: 560px;
+
         &__wrapper {
-            padding-top: 25px;
             align-items: center;
             text-align: center;
         }
@@ -118,19 +229,63 @@
         }
     }
 
-    .advantages {
-        padding: 30px 0 50px 0;
+    .title {
+        font-size: 20px;
 
-        &__wrapper {
-            padding-top: 0;
-            flex-direction: column;
-            align-items: center;
+        .advantages {
+            padding: 30px 0 50px 0;
+
+            &__wrapper {
+                padding-top: 0;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &__items {
+                padding-top: 30px;
+                width: 300px;
+            }
         }
 
-        &__items {
-            padding-top: 30px;
-            width: 300px;
+        .consultation {
+            &__descr {
+                font-size: 16px;
+            }
+        }
+
+        .title {
+            &_left {
+                font-size: 20px;
+            }
+        }
+
+        .feed-form {
+            width: 250px;
+
+            input {
+                width: 250px;
+                height: 50px;
+                padding: 0 10px;
+            }
         }
     }
 
+    .catalog {
+        h2 {
+            font-size: 20px;
+        }
+
+        &__tabs {
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        &__tab {
+            margin-top: 15px;
+            width: 120px;
+            height: 40px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
 }

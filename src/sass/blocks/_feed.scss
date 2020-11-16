@@ -1,0 +1,44 @@
+.feed {
+    &__wrapper {
+        padding: 70px 0;
+    }
+
+    &-item {
+        padding: 50px 0;
+        border-bottom: 1px solid #f6f6f6;
+        position: relative;
+        &:first-child {
+            padding-top: 0;
+        }
+        &:last-child {
+            padding-bottom: 0;
+            border: none;
+        }
+        img {
+            float: left;
+            padding-right: 62px;
+            min-width: 169px;
+            height: 169px;
+        }
+        &__text {
+            display: grid;
+        }
+        &__name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0d0d0d;
+        }
+        &__marathon {
+            padding-top: 10px;
+            font-size: 14px;
+            font-weight: 300;
+            color: #646464;
+        }
+        &__descr {
+            padding-top: 19px;
+            font-size: 16px;
+            font-weight: 300;
+            color: #0d0d0d;
+        }
+    }
+}
